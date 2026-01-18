@@ -1,0 +1,31 @@
+applications:
+# Application
+- name: cfo-articulate
+  instances: 1
+  memory: 128M
+  routes:
+    - route: cfo-articulate-ap25.cfapps.ca10.hana.ondemand.com
+  path: apps
+  buildpacks:
+    - nodejs_buildpack
+  timeout: 180
+  services:
+    - cfo-articulate-uaa
+
+# Application Router
+- name: approuter
+  routes:
+    - route: approuter-cfo-articulate-ap25.cfapps.ca10.hana.ondemand.com
+  path: approuter
+  buildpacks:
+    - nodejs_buildpack
+  memory: 128M
+  services:
+    - cfo-articulate-uaa
+  env:
+    destinations: >
+      [
+        {"name":"cfo-articulate-destination",
+         "url":"https://cfo-articulate-ap25.cfapps.ca10.hana.ondemand.com",
+         "forwardAuthToken": true}
+      ]

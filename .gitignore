@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+dist/
+build/
+.dat/
+.sap/
+
+# IDE
+.vscode/
+.idea/
+
+# Cloud Foundry
+manifest.yml.bk
+go_build_pack.log

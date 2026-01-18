@@ -1,0 +1,9 @@
+{
+    "routes": [
+        {
+            "source": "^/home",
+            "target": "/",
+            "destination": "cfo-articulate-destination"
+        }
+    ]
+}

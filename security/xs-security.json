@@ -1,0 +1,33 @@
+{
+    "xsappname": "cfo-articulate",
+    "tenant-mode": "dedicated",
+    "scopes": [
+        {
+            "name": "$XSAPPNAME.read",
+            "description": "With this scope, USER can view Articulate content"
+        }
+    ],
+    "role-templates": [
+        {
+            "name": "Viewer",
+            "description": "Role to view Articulate content",
+            "scope-references": [
+                "$XSAPPNAME.read"
+            ]
+        }
+    ],
+    "role-collections": [
+        {
+            "name": "cfo-articulate-Viewer",
+            "description": "CFO Articulate Viewer",
+            "role-template-references": [
+                "$XSAPPNAME.Viewer"
+            ]
+        }
+    ],
+    "oauth2-configuration": {
+        "redirect-uris": [
+            "https://approuter-cfo-articulate-ap25.cfapps.ca10.hana.ondemand.com/login/callback"
+        ]
+    }
+}
