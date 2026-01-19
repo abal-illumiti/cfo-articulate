@@ -13,8 +13,10 @@ The project consists of two main microservices:
 
 *   `approuter/`: Contains the Application Router configuration and dependencies.
 *   `apps/`: Contains the backend logic and static content.
-    *   `CFOHome/`: Static content for the "CFO Home" articulate story.
+    *   `Home/`: Static content for the "Home" articulate story.
     *   `101History/`: Static content for the "101 History" articulate story.
+    *   `101WithoutSplit/`: Static content for the "101 Without Split" articulate story.
+    *   `101WithSplit/`: Static content for the "101 With Split" articulate story.
 *   `security/`: Contains the XSUAA security descriptor (`xs-security.json`).
 
 ## Prerequisites
