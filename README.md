@@ -71,5 +71,8 @@ Once deployed, the application will be accessible via the App Router's URL.
 *   **101 History**: `https://<approuter-url>/home/101History/`
     *   Serves `101History/story.html`
     *   Requires `read` scope.
+*   **Form 101**: `https://<approuter-url>/home/Form101/`
+    *   Serves `Form101/story.html`
+    *   Requires `read` scope.
 
 *Note: The `/home` path segment is defined in the `approuter/xs-app.json` route configuration.*
