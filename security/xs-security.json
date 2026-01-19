@@ -27,7 +27,11 @@
     ],
     "oauth2-configuration": {
         "redirect-uris": [
-            "https://approuter-cfo-articulate-ap25.cfapps.ca10.hana.ondemand.com/login/callback"
+            "https://approuter-cfo-articulate-ap25.cfapps.ca10.hana.ondemand.com/login/callback",
+            "https://approuter-cfo-articulate-dev.cfapps.ca10.hana.ondemand.com/login/callback",
+            "https://approuter-cfo-articulate-qa.cfapps.ca10.hana.ondemand.com/login/callback",
+            "https://approuter-cfo-articulate-prod.cfapps.ca10.hana.ondemand.com/login/callback",
+            "https://*.cfapps.hana.ondemand.com/**"
         ]
     }
 }

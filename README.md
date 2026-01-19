@@ -44,22 +44,51 @@ The project consists of two main microservices:
 
 ## Deployment
 
+This application supports deployment to multiple environments (Dev, QA, Production) using Cloud Foundry variable files.
+
 1.  **Login to Cloud Foundry:**
     ```bash
     cf login
     ```
+    Select the appropriate org and space for your target environment.
 
-2.  **Create the XSUAA Service Instance (Manual Step):**
-    Before deploying, you must MANUALLY create the XSUAA service instance using the security descriptor. This is not automated by the push command.
+2.  **Create the XSUAA Service Instance (One-time Manual Step):**
+    Before deploying to any environment, you must MANUALLY create the XSUAA service instance. The security configuration includes redirect URIs for all environments.
     ```bash
     cf create-service xsuaa application cfo-articulate-uaa -c security/xs-security.json
     ```
+    
+    **Note:** If you've already created the service and need to update it with the new redirect URIs:
+    ```bash
+    cf update-service cfo-articulate-uaa -c security/xs-security.json
+    ```
 
 3.  **Deploy the Application:**
-    Navigate to the root directory and push the application using the manifest.
+    Navigate to the root directory and push the application using the appropriate variable file for your target environment.
+    
+    **For Development:**
     ```bash
-    cf push
+    cf push --vars-file vars-dev.yml
     ```
+    
+    **For QA:**
+    ```bash
+    cf push --vars-file vars-qa.yml
+    ```
+    
+    **For Production:**
+    ```bash
+    cf push --vars-file vars-prod.yml
+    ```
+
+### Environment URLs
+
+After deployment, your applications will be available at:
+
+*   **Dev**: `https://approuter-cfo-articulate-dev.cfapps.ca10.hana.ondemand.com`
+*   **QA**: `https://approuter-cfo-articulate-qa.cfapps.ca10.hana.ondemand.com`
+*   **Prod**: `https://approuter-cfo-articulate-prod.cfapps.ca10.hana.ondemand.com`
+
 
 ## Usage
 
