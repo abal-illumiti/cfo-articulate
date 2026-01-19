@@ -12,16 +12,10 @@ app.use(passport.initialize());
 app.use(passport.authenticate('JWT', { session: false }));
 
 // Serve Static Applications
-app.use('/CFOHome', checkReadScope, express.static(__dirname + '/CFOHome', { index: 'story.html' }));
+app.use('/Home', checkReadScope, express.static(__dirname + '/Home', { index: 'story.html' }));
 app.use('/101History', checkReadScope, express.static(__dirname + '/101History', { index: 'story.html' }));
-app.use('/Form101', checkReadScope, express.static(__dirname + '/Form101', { index: 'story.html' }));
-
-
-app.get('/home', checkReadScope, getProducts);
-
-function getProducts(req, res) {
-    res.send('Product list would go here');
-}
+app.use('/101WithoutSplit', checkReadScope, express.static(__dirname + '/101WithoutSplit', { index: 'story.html' }));
+app.use('/101WithSplit', checkReadScope, express.static(__dirname + '/101WithSplit', { index: 'story.html' }));
 
 // Scope check
 function checkReadScope(req, res, next) {

@@ -21,7 +21,7 @@
           <option name="logo_enabled" value="true">
             <options>
               <option name="logo_url" />
-              <option name="html5_logo_url" value="mobile/6hAhw8ELuyg.png" />
+              <option name="html5_logo_url" value="mobile/672q8KtPBpU.png" />
             </options>
           </option>
           <option name="sidebar_enabled" value="true">
@@ -1534,6 +1534,7 @@
       <string id="closed_captions">Captions</string>
       <string id="closedcaptions_shortcut">Toggle captions</string>
       <string id="comma_key">Comma</string>
+      <string id="continue">Continue</string>
       <string id="continueresponsive">Continue</string>
       <string id="ctrl_key">Ctrl</string>
       <string id="desktop_start">Start Course</string>
@@ -1625,7 +1626,6 @@
       <string id="video_transcript_select_track">Select track</string>
       <string id="video_transcript_title">Transcripts</string>
       <string id="zoom_to_fit">Zoom to fit</string>
-      <string id="continue">Continue</string>
       <string id="invalid_prompt_button">OK</string>
       <string id="invalid_prompt_message">You must complete the question before submitting.</string>
       <string id="invalid_prompt_title">Invalid Answer</string>
@@ -1650,15 +1650,16 @@
     <outline>
       <links>
         <slidelink slideid="" emptySceneId="_player.6Ik5braOavc" displaytext="HOME PAGE" expand="true" type="slide" />
-        <slidelink slideid="_player.6MAYpqXNUyT" displaytext="AUDIT" expand="true" type="slide" />
-        <slidelink slideid="_player.5h0QNgkk0JM" displaytext="PRODUCTION MANAGEMENT" expand="true" type="slide">
+        <slidelink slideid="_player.6Oa57TGNvr3" displaytext="AUDIT" expand="true" type="slide" />
+        <slidelink slideid="_player.6FfiiJsOabM" displaytext="PRODUCTION MANAGEMENT" expand="true" type="slide">
           <links>
             <slidelink slideid="" emptySceneId="_player.6o5fDBbseKB" displaytext="Initiate Form 201" expand="true" type="slide" />
             <slidelink slideid="" emptySceneId="_player.5WC1SVnTO8B" displaytext="Form 201 History" expand="true" type="slide" />
             <slidelink slideid="" emptySceneId="_player.5up7Zu4sq5X" displaytext="Form 101N Dashboard" expand="true" type="slide" />
-            <slidelink slideid="_player.6QMIjscdLJI" displaytext="Form 101" expand="true" type="slide">
+            <slidelink slideid="_player.5nCmGTTIGlK" displaytext="Form 101" expand="true" type="slide">
               <links>
                 <slidelink slideid="_player.6lKLWDG9dyK.5vrZ9e1cadv" displaytext="Form 101 With Split" expand="false" type="slide" />
+                <slidelink slideid="_player.6BHY9ymHia4.5amRVrwnZYW" displaytext="Test" expand="false" type="slide" />
                 <slidelink slideid="_player.6BHY9ymHia4.5fgnUFN2U2K" displaytext="Form 101 Without Split" expand="false" type="slide" />
                 <slidelink slideid="_player.641yltFAr9m.5qrMhKAFeaj" displaytext="Form 101 History" expand="false" type="slide" />
               </links>
@@ -1672,8 +1673,8 @@
             <slidelink slideid="" emptySceneId="_player.6gEGg7QqeZg" displaytext="Shipping" expand="true" type="slide" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.5eOBhV0SyLd" displaytext="Quota Management" expand="true" type="slide" />
-        <slidelink slideid="_player.6qkr2DIUZEu" displaytext="Account Management" expand="true" type="slide" />
+        <slidelink slideid="_player.6C3l1Cz5wXN" displaytext="Quota Management" expand="true" type="slide" />
+        <slidelink slideid="_player.5tLlhWn6VDE" displaytext="Account Management" expand="true" type="slide" />
       </links>
     </outline>
   </nav_data>
