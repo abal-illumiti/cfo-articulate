@@ -17,10 +17,10 @@ window.Script1 = function()
 {
   var player = GetPlayer();
 var urlParams = new URLSearchParams(window.location.search);
-var slideToJump = urlParams.get('targetSlide'); // Detects the parameter name
+var slideParam = urlParams.get('slide');
 
-if (slideToJump) {
-    player.SetVar("targetSlide", slideToJump);
+if (slideParam) {
+    player.SetVar("targetSlide", slideParam);
 }
 }
 
